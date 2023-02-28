@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
 	use 'nvim-tree/nvim-tree.lua'
 	use 'nvim-tree/nvim-web-devicons'
 	use 'lervag/vimtex'
+	use {'nvim-telescope/telescope.nvim', requires={'nvim-lua/plenary.nvim'}}
 
 	if packer_bootstrap then
 		require('packer').sync()
