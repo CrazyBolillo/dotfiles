@@ -8,5 +8,7 @@ set.shiftwidth = 4
 
 
 require("plugins.setup")
-require("plugins.nvim-tree")
 require("plugins.vimtex")
+require("plugins.nvim-tree")
+require("plugins.nvim-telescope")
+require("plugins.nvim-treesitter")
