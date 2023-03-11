@@ -25,6 +25,22 @@ require('lspconfig')['clangd'].setup({
 	on_attach = on_attach
 })
 
+require('lspconfig')['pyright'].setup({
+	on_attach = on_attach,
+	settings = {
+		pyright = {
+			autoImportCompletion = true},
+		python = {
+			analysis = {
+				autoSearchPaths = true,
+				diagnosticMode = 'openFilesOnly',
+				useLibraryCodeForTypes = true,
+				typeCheckingMode = 'off'
+			}
+		}
+	}
+})
+
 local cmp = require('cmp')
 cmp.setup({
 	mapping = cmp.mapping.preset.insert({
