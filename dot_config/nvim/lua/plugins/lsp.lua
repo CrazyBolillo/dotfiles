@@ -41,6 +41,8 @@ require('lspconfig')['pyright'].setup({
 	}
 })
 
+require('lspconfig')['gopls'].setup({})
+
 local cmp = require('cmp')
 cmp.setup({
 	mapping = cmp.mapping.preset.insert({
