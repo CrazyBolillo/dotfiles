@@ -27,6 +27,10 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'ray-x/go.nvim'
+	use 'airblade/vim-gitgutter'
+	use 'mfussenegger/nvim-dap'
+	use 'leoluz/nvim-dap-go'
+	use { "rcarriga/nvim-dap-ui", requires = {"nvim-neotest/nvim-nio"} }
 
 	if packer_bootstrap then
 		require('packer').sync()
