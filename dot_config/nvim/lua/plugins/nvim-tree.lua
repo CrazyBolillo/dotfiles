@@ -4,10 +4,10 @@ vim.opt.termguicolors = true
 
 require("nvim-tree").setup({
 	view = {
-		adaptive_size = true
-	}
+		adaptive_size = true,
+	},
 })
-vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true})
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true })
 
 local function open_nvim_tree(data)
 	local directory = vim.fn.isdirectory(data.file) == 1
